@@ -1,0 +1,105 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 1000px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    padding: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+.main ul li  :hover{
+    background-color: aquamarine;
+}
+.info{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Piazzolla', serif;
+
+}
+ .main ul li a{
+    font-family:'baloo bhai',cursive;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.932);
+    background: linear-gradient(orange,red);
+    border-radius: 20px;
+    border: none;
+ }
+
+ .mainpro input{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    margin-top: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    border-color: brown;
+    font-family: 'Bangers', cursive;
+font-family: 'Indie Flower', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Piazzolla', serif;    
+ }
+
+ .mainpro h2{
+     padding: 10px;
+     font-family:'baloo bhai',cursive;
+     
+ }
+ .mainpro h2 input{
+    padding: 5px;
+ }
+
+ .submit h2 input{
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-radius: 0;
+    border-bottom: 10px solid #999;
+    outline: none;
+    box-shadow: 0 0 20px 9px #ff61241f;
+ }
+
+.submit h2{
+    text-align: center;
+}
+
+.submit h2 :hover{
+    background-color: green;
+    color: azure;
+    border-radius: 20px;
+}
+.back img{
+    height: 200px;
+    width: 200px;
+}
+
+.inputs{
+    margin-top: 100px;
+    text-align: center;
+}
+.college_informatiom{
+    text-align: center;
+}

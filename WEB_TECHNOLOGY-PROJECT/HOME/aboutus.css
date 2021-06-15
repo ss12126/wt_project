@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    background-color: aliceblue;
+}
+.info1{
+    margin-top: 100px;
+    text-align: center;
+}
+.info1 h1{
+    color: orangered;
+    font-family:'baloo bhai',cursive;
+
+}
+.info1 h2{
+    color: green;
+    font-family:'baloo bhai',cursive;
+
+}
+.reference{
+    margin-top: 50px;
+    text-align: center;
+}
+.reference h2{
+    font-family:'baloo bhai',cursive;
+}
+.reference p input{
+    height: 300px;
+    width: 500px;
+}
+.reference textarea {
+    border-radius:15px ;
+    border-color: brown;
+}
+.reference h2 input{
+    border-radius: 10px;
+    padding: 10px;
+    font-family:'baloo bhai',cursive;
+    font-weight: bold;
+}

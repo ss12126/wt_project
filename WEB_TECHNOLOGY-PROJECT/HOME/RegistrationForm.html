@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="college_project.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Indie+Flower&family=Pacifico&family=Piazzolla:ital,wght@0,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Indie+Flower&family=Monoton&family=Pacifico&family=Piazzolla:ital,wght@0,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/49f259f8c5.js" crossorigin="anonymous"></script>
+    <script>
+    //validation
+        
+ 
+        
+     
+
+
+
+        //  javascript for the selection of branch
+        function ddlselect(){
+
+            var d=document.getElementById("aniket");
+            var display_text=d.options[d.selectIndex].text;
+            document.getElementById("textvalue").value=display_text
+
+        }
+
+
+
+
+
+
+
+ 
+        // javascript for the selection of class
+        function ddlselect1(){
+
+             var d=document.getElementById("aniket1");
+             var display_text=d.options[d.selectIndex].text;
+            document.getElementById("textvalue").value=display_text
+
+}
+    </script>
+</head>
+
+
+
+<body  class="back" background="/priscilla-du-preez-XkKCui44iM0-unsplash.jpg">
+    <div class="mainpro">
+        <form id="register" method="post" onsubmit="return validation();">
+       
+     <div class="main">
+         <!-- starting of navbar -->
+         <div class="navbar">
+             <ul>
+                 <li><a href="" class="home">Home</a></li>
+                 <li><a href="test1.html" class="home">about</a></li>
+                 <li><a href="test2.html" class="home">contact</a></li>
+             </ul>  
+         </div>
+         <!-- ending of navbar -->    
+     </div>
+     <!-- ending of main function -->
+     
+     <!-- class input start -->
+     <form onsubmit=" return validation()">
+     <div class="inputs">
+        <div class="info">
+            <h1>STUDENT INFORMATION FORM</h1>
+        </div>
+         <h2>Enter the student name <input type="text" id="name" placeholder="student name"></h2>
+         <h2>Enter the date of birth<input type="date" placeholder="date of birth"></h2>
+         
+              <h2>male: <input type="radio" name="status"></h2>
+              <h2>female: <input type="radio" name="status"></h2>
+
+         
+         <h2>Enter the mother name  <input type="text" placeholder="mother name"></h2>    
+         <h2>Enter the prn number      <input type="number" placeholder="prn number"></h2>
+         <h2>Enter the email_id name <input type="email" id="email1" placeholder="email id"></h2>   
+         <!-- starting of html for branch selection -->
+         <div class="branch">
+            <h2> Enter the branch</h2>
+
+            <select name="select_branch" id="aniket">  
+
+                <option value="">__select branch__</option>
+                <option value="">Computer</option>
+                <option value="">Electrical</option>
+                <option value="">Entc</option>
+                <option value="">Mechanical</option>
+                <option value="">Civil </option>
+            </select>
+         </div>   
+         <!-- ending of branch selection -->
+
+        <!-- starting of html for the class selection -->
+         <div class="selcect_class">
+            <h2>Enter the class</h2>
+            <select name="select_branch" id="aniket1">  
+
+                <option value="">__select class__</option>
+                <option value="">Fe</option>
+                <option value="">Se</option>
+                <option value="">Te</option>
+                <option value="">Be </option>
+            </select>
+         </div>
+         <!-- ending of class selection -->
+         <h2>Enter the mobile no <input type="number" id="mobile1" placeholder="mobile number"></h2>
+         <h2> Parent mobile no<input type="text" id="mobile2" placeholder="parent mobile" ></h2>
+         <h2>Enter student  address <input type="text" placeholder="address"></h2>
+         <h2>Set the password <input type="password" class="password11" id="pass1" placeholder="password"></h2>
+         
+         <h2>Confirm paaword<input type="password" class="passsword22" id="pass2" placeholder="password"></h2>
+         
+     </div>
+     <!-- ending of input class -->
+
+     <div class="submit">
+         <h2><input class="button"type="submit" onclick="welcome()" value=submit></h2>
+         <script type="text/javascript">
+             function welcome(){
+                 g1=validation()
+                 if(g1==true){
+                    alert("succefully submmited")
+                 }
+                 else{
+                     alert("Not submitted")
+                 }
+             }   
+         </script>
+
+    </form>
+
+    </div>
+    <!-- ending class main pro -->
+    <script type="text/javascript">
+        function validation(){
+            var password=document.getElementById("pass1").value;
+            var password1=document.getElementById("pass2").value
+            var mobno=document.getElementById("mobile1").value 
+            var pmobno=document.getElementById("mobile2").value
+            var name123=document.getElementById("name").value
+            var email123=document.getElementById("email1")
+            
+            if(mobno.length!=10)
+            {
+                alert("Mobile number should have exact 10 digits");
+                return false;
+            }
+            else if(pmobno.length!=10)
+            {
+                alert("Parent's mobile number should have exact 10 digits");
+                return false;
+            }
+            else if( name123==""){
+                    alert("name is compulsary");
+                    return false;
+            }
+            else if(password1!=password)
+            {
+                alert("Enter correct password in confirm password!");
+                return false;
+            }
+            else if(email==""){
+                alert("email is compulsary")
+            }
+            else
+            {
+                return true;
+            }
+        }
+    </script>
+     
+</body>
+
+</html>
